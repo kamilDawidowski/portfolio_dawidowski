@@ -1,0 +1,14 @@
+.header
+{
+   height: 200px;
+}
+.header-bg
+{
+   /*background: rgb(7,15,52);*/
+   /*background: linear-gradient(90deg, rgba(7,15,52,1) 18%, rgba(25,33,79,1) 53%, rgba(7,15,52,1) 85%);*/
+   /*filter: brightness(120%);*/
+
+   /*background-color: #0bad66;*/
+   background-color: #040d2d;
+   color:white;
+}
