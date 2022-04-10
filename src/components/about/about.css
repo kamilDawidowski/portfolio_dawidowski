@@ -67,3 +67,23 @@
     font-weight: 700;
     font-style: normal;
 }
+.rounded-1
+{   color: white;
+    background-color: #1a1c34!important;
+    border-radius: 40px!important;
+    padding: 10px;
+    min-height: 220px;
+}
+.rounded-2
+{color: white;
+    background-color:#1a1c34 !important;
+    border-radius: 40px!important;
+    height: 500px;
+}
+.rounded-3
+{
+    color: white;
+    background-color:#1a1c34!important;
+    border-radius: 40px!important;
+    height: 700px;
+}

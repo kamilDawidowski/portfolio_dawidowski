@@ -4,8 +4,9 @@ import './skill.css'
 function SkillImage(props) {
     return (
         <div className='text-center '>
-            <img className={props.animation}
-                 width={300}
+            <img
+                width={'80%'}
+                 // width={300}
 
                  src={props.src}
                  loading="lazy"

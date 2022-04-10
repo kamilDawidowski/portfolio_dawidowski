@@ -1,14 +1,51 @@
-.header
-{
-   height: 200px;
-}
-.header-bg
-{
-   /*background: rgb(7,15,52);*/
-   /*background: linear-gradient(90deg, rgba(7,15,52,1) 18%, rgba(25,33,79,1) 53%, rgba(7,15,52,1) 85%);*/
-   /*filter: brightness(120%);*/
 
-   /*background-color: #0bad66;*/
-   background-color: #040d2d;
-   color:white;
+zmienna {
+    --height-menu: 100px;
+    --height-second-menu: 80px;
+}
+
+
+.header {
+    margin-bottom: 20px !important;
+    padding: 50px;
+
+    /*height: 200px;*/
+}
+
+.header-bg {
+    /*background: rgb(7,15,52);*/
+    /*background: linear-gradient(90deg, rgba(7,15,52,1) 18%, rgba(25,33,79,1) 53%, rgba(7,15,52,1) 85%);*/
+    /*filter: brightness(120%);*/
+
+    /*background-color: #0bad66;*/
+    background-color: #040d2d;
+    color: white;
+
+    /*height: var(--height-menu)!important;*/
+}
+
+.menu-header {
+
+
+    padding: 5px;
+    margin: 0 auto;
+    min-height: 50px;
+    max-width: 600px;
+    border-radius: 50px;
+    background-color: #1a1c34;
+    color: #ffffff;
+    margin-bottom: 20px !important;
+    font-size: 20px;
+
+
+}
+.button-menu
+{
+    border-radius: 50px;
+    background-color: #150b28;
+    text-align: center;
+    padding: 5px;
+    font-size: clamp(1rem,1vw,1vw)
+
+
 }

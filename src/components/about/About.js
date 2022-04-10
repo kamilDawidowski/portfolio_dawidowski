@@ -1,11 +1,9 @@
 import React from 'react';
-import {Box, Grid, Typography} from "@mui/material";
+import {Box, Grid, Paper, Typography} from "@mui/material";
 import './about.css'
 import svg from './../../assects/about/waves.svg'
-import Animation from "./animation/Animation";
-import School from "./school/School";
-import DescriptionCard from "./DescriptionCard";
-import Education from "./Education";
+import Work from "./work/Work";
+import Me from "./me/Me";
 
 function About(props) {
     return (
@@ -25,14 +23,14 @@ function About(props) {
 
             <Box sx={{margin: 5}}>
                 <Grid container spacing={2} justifyContent="center">
-                    <Grid item xs={12} md={6} lg={4} >
-                    <DescriptionCard title={"Education"} description={<Education/>}/>
+                    <Grid item xs={12} md={12} lg={12} >
+                        <Paper elevation={3} sx={{margin:'5%' }} className={'rounded-1'}><Me/></Paper>
                     </Grid>
-                    <Grid item xs={12} md={6} lg={4}>
-                        <DescriptionCard title={"Work"}/>
+                    <Grid item xs={12} md={6} lg={6}>
+                        <Paper elevation={3} sx={{width:'80%',margin:'10%' }}  className={'rounded-2'}>ss</Paper>
                     </Grid>
-                    <Grid item xs={12} md={6} lg={4}>
-                        <DescriptionCard title={"Projects"}/>
+                    <Grid item xs={12} md={6} lg={6}>
+                        <Paper elevation={3} sx={{width:'80%',margin:'10%' }}  className={'rounded-3'}>ss</Paper>
                     </Grid>
                 </Grid>
             </Box>
