@@ -21,16 +21,16 @@ function About(props) {
             <Typography className={'text-white text-center text'} fontSize={60}>About me</Typography>
 
 
-            <Box sx={{margin: 5}}>
+            <Box sx={{marginTop: 5}}>
                 <Grid container spacing={2} justifyContent="center">
                     <Grid item xs={12} md={12} lg={12} >
-                        <Paper elevation={3} sx={{margin:'5%' }} className={'rounded-1'}><Me/></Paper>
+                        <Paper elevation={3} sx={{marginLeft:'5%',marginRight:'5%',marginBottom:10 }} className={'rounded-1'}><Me/></Paper>
                     </Grid>
                     <Grid item xs={12} md={6} lg={6}>
-                        <Paper elevation={3} sx={{width:'80%',margin:'10%' }}  className={'rounded-2'}>ss</Paper>
+                        <Paper elevation={3} sx={{width:'80%',marginLeft:'10%' }}  className={'rounded-2'}>ss</Paper>
                     </Grid>
                     <Grid item xs={12} md={6} lg={6}>
-                        <Paper elevation={3} sx={{width:'80%',margin:'10%' }}  className={'rounded-3'}>ss</Paper>
+                        <Paper elevation={3} sx={{width:'80%',marginLeft:'10%' }}  className={'rounded-3'}>ss</Paper>
                     </Grid>
                 </Grid>
             </Box>
