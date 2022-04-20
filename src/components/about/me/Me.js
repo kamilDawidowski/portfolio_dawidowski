@@ -1,10 +1,7 @@
 import React from 'react';
 import {Grid, Stack, Typography} from "@mui/material";
 import logo from "../work/Goldenore_Logo_Jasne.png";
-import logo1 from "./DSC05014.JPG";
-import logo2 from "./DSC_3245.JPG";
-import logo3 from "./DSC_3255.JPG";
-import logo4 from "./DSC_3264.JPG";
+
 function Me(props) {
     return (
 

@@ -4,6 +4,8 @@ import './about.css'
 import svg from './../../assects/about/waves.svg'
 import Work from "./work/Work";
 import Me from "./me/Me";
+import Projects from "./projects/Projects";
+import Cert from "./certification/Cert";
 
 function About(props) {
     return (
@@ -24,14 +26,22 @@ function About(props) {
             <Box sx={{marginTop: 5}}>
                 <Grid container spacing={2} justifyContent="center">
                     <Grid item xs={12} md={12} lg={12} >
-                        <Paper elevation={3} sx={{marginLeft:'5%',marginRight:'5%',marginBottom:10 }} className={'rounded-1'}><Me/></Paper>
+                        <Paper elevation={3} sx={{marginLeft:5,marginRight:5,marginBottom:10 }} className={'rounded-1'}><Me/></Paper>
                     </Grid>
-                    <Grid item xs={12} md={6} lg={6}>
-                        <Paper elevation={3} sx={{width:'80%',marginLeft:'10%' }}  className={'rounded-2'}>ss</Paper>
+                    <Grid item xs={12} md={6} lg={6} sx={{padding:4}}>
+                        <Paper elevation={3} sx={{marginLeft:5 }}  className={'rounded-2'}>
+                            <Work/>
+                        </Paper>
+                        <Paper elevation={3} sx={{marginLeft:5, marginTop:2 }}  className={'rounded-2'}>
+                            <Cert/>
+                        </Paper>
                     </Grid>
-                    <Grid item xs={12} md={6} lg={6}>
-                        <Paper elevation={3} sx={{width:'80%',marginLeft:'10%' }}  className={'rounded-3'}>ss</Paper>
+                    <Grid item xs={12} md={6} lg={6} sx={{padding:4}}>
+                        <Paper elevation={3} sx={{marginLeft:5 }}  className={'rounded-3'}>
+                            <Projects/>
+                        </Paper>
                     </Grid>
+
                 </Grid>
             </Box>
 
