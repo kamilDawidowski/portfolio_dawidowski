@@ -3,6 +3,7 @@ zmienna {
     --height-menu: 100px;
     --height-second-menu: 80px;
 }
+@import url("https://use.typekit.net/tgn3qzl.css");
 
 
 .header {
@@ -30,7 +31,7 @@ zmienna {
 .menu-header {
 
 
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
     margin: 0 auto;
     min-height: 50px;
     min-width: 350px;
@@ -51,7 +52,11 @@ zmienna {
     background-color: #150b28;
     text-align: center;
     padding: 5px;
-    font-size: clamp(1rem,1vw,1vw)
+    font-size: clamp(1rem,1vw,1vw);
+    margin-top: 3px;
+    font-family: greycliff-cf, sans-serif;
+    font-weight: 700;
+    font-style: normal;
 
 
 }

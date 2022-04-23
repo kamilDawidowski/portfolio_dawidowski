@@ -6,6 +6,7 @@ import Work from "./work/Work";
 import Me from "./me/Me";
 import Projects from "./projects/Projects";
 import Cert from "./certification/Cert";
+import Publication from "./publication/Publication";
 
 function About(props) {
     return (
@@ -40,10 +41,14 @@ function About(props) {
                         <Paper elevation={3} sx={{marginLeft:5 }}  className={'rounded-3'}>
                             <Projects/>
                         </Paper>
+                        {/*<Paper elevation={3} sx={{marginLeft:5, marginTop:2 }}  className={'rounded-3-3'}>*/}
+                        {/*    <Publication/>*/}
+                        {/*</Paper>*/}
                     </Grid>
 
                 </Grid>
             </Box>
+
 
 
       </div>

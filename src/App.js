@@ -5,6 +5,7 @@ import Welcome from "./components/welcome/Welcome";
 import Skills from "./components/skills/Skills";
 import SpeedDialButton from "./components/speedDial/SpeedDialButton";
 import About from "./components/about/About";
+import Wave from "./components/wave/Wave";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Welcome/>
         <Skills/>
         <About/>
+        <Wave/>
         <SpeedDialButton/>
     </div>
   );
