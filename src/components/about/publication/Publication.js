@@ -1,6 +1,6 @@
 import React from 'react';
-import {Grid, Paper, Typography} from "@mui/material";
-
+import {Avatar, Grid, ListItem, ListItemAvatar, ListItemButton, ListItemText, Paper, Typography} from "@mui/material";
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 function Publication(props) {
     return (
         <div className='p-4'>
@@ -9,15 +9,25 @@ function Publication(props) {
 
                     <Paper elevation={3} sx={{width:'80%',marginLeft:'10%',marginBottom:3 ,padding:1}}  className={'rounded-2-2'}>
                         <Typography  color={'white'} fontSize={24} textAlign={'center'} >
-                            My Begins
+                            Publications
                         </Typography>
 
                     </Paper>
 
-                    <Typography  color={'white'} fontSize={20}>
-                        My adventure with computer science began in the 6th High School in Gdynia on the mathematics, physics and information technology profile.
-                        Then I started my studies at the WAT  in the field of information technology, specializing in information systems.
-                    </Typography>
+                <ListItem>
+                    <ListItemButton>
+                    <ListItemAvatar>
+                        <Avatar>
+                            <MenuBookIcon />
+                        </Avatar>
+                    </ListItemAvatar>
+                    <ListItemText className={'text-white'}
+                        sx={{color:'white'}}
+                        primary="The impact of docker on the performance of kafka connect "
+
+                    />
+                    </ListItemButton>
+                </ListItem>
 
             </Grid>
             <Grid item xs={12}>

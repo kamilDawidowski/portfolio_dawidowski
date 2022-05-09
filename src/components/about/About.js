@@ -7,6 +7,8 @@ import Me from "./me/Me";
 import Projects from "./projects/Projects";
 import Cert from "./certification/Cert";
 import Publication from "./publication/Publication";
+import PersonalProject from "./personalProject/PersonalProject";
+import Language from "./language/Language";
 
 function About(props) {
     return (
@@ -33,17 +35,24 @@ function About(props) {
                         <Paper elevation={3} sx={{marginLeft:5 }}  className={'rounded-2'}>
                             <Work/>
                         </Paper>
+
+                        <Paper elevation={3} sx={{marginLeft:5, marginTop:2 }}  className={'rounded-3-3'}>
+                            <Publication/>
+                        </Paper>
+                        <Paper elevation={3} sx={{marginLeft:5, marginTop:2 }}  className={'rounded-3-3'}>
+                            <PersonalProject/>
+                        </Paper>
                         <Paper elevation={3} sx={{marginLeft:5, marginTop:2 }}  className={'rounded-2'}>
-                            <Cert/>
+                            <Language/>
                         </Paper>
                     </Grid>
                     <Grid item xs={12} md={6} lg={6} sx={{padding:4}}>
                         <Paper elevation={3} sx={{marginLeft:5 }}  className={'rounded-3'}>
                             <Projects/>
                         </Paper>
-                        {/*<Paper elevation={3} sx={{marginLeft:5, marginTop:2 }}  className={'rounded-3-3'}>*/}
-                        {/*    <Publication/>*/}
-                        {/*</Paper>*/}
+                        <Paper elevation={3} sx={{marginLeft:5, marginTop:2 }}  className={'rounded-2'}>
+                            <Cert/>
+                        </Paper>
                     </Grid>
 
                 </Grid>

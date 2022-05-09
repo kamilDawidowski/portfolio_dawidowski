@@ -1,0 +1,6 @@
+text-none:hover, text-none:visited, text-none:link, text-none:active
+{
+    text-decoration: none!important;
+    border-bottom-style: none!important;
+
+}

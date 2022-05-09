@@ -14,15 +14,14 @@ function Cert(props) {
 
             </Paper>
             <Grid container spacing={2} justifyContent="center">
-                <Grid item xs={6} md={6} lg={6} >
+                <Grid item xs={12} md={12} lg={12} sx={{padding:2}} >
                     <img
-                        width={'80%'}
+                        height={'200'}
                         src={logo}
                         loading="lazy"
                     />
                 </Grid>
                 <Grid item xs={12} md={12} lg={12} >
-
                 </Grid>
             </Grid>
 

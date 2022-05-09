@@ -1,21 +1,23 @@
-
 import './index.css';
 import Header from "./components/header/Header";
-import Welcome from "./components/welcome/Welcome";
-import Skills from "./components/skills/Skills";
 import SpeedDialButton from "./components/speedDial/SpeedDialButton";
-import About from "./components/about/About";
-import Wave from "./components/wave/Wave";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import MainSite from "./MainSite";
+import MonitoringJavaApplication from "./components/monitoringJavaAplication/MonitoringJavaApplication";
 
 function App() {
   return (
     <div className="main">
+        <Router>
         <Header/>
-        <Welcome/>
-        <Skills/>
-        <About/>
-        <Wave/>
+        <Routes>
+            <Route path="/" exact element={<MainSite/>}/>
+            <Route path="/personalProject/java-monitoring" exact element={<MonitoringJavaApplication/>}/>
+            {/*<Route  component={EmptySite}/>*/}
+        </Routes>
+
         <SpeedDialButton/>
+        </Router>
     </div>
   );
 }
