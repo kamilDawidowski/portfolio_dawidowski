@@ -3,7 +3,7 @@ import Header from "./components/header/Header";
 import SpeedDialButton from "./components/speedDial/SpeedDialButton";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import MainSite from "./MainSite";
-import MonitoringJavaApplication from "./components/monitoringJavaAplication/MonitoringJavaApplication";
+import MonitoringKafka from "./components/monitoringKafka/MonitoringKafka";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Header/>
         <Routes>
             <Route path="/" exact element={<MainSite/>}/>
-            <Route path="/personalProject/java-monitoring" exact element={<MonitoringJavaApplication/>}/>
+            <Route path="/personalProject/java-monitoring" exact element={<MonitoringKafka/>}/>
             {/*<Route  component={EmptySite}/>*/}
         </Routes>
 

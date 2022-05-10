@@ -43,7 +43,7 @@ function PersonalProject() {
                             </ListItemAvatar>
                             <ListItemText className={'text-white text-decoration-none text-none'}
                                           sx={{color:'white',textDecoration:'none'}}
-                                          primary="Monitoring java application using Grafana and Prometheus"
+                                          primary="Monitoring Kafka using Grafana and Prometheus"
 
                             />
                         </ListItemButton>
