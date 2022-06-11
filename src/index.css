@@ -26,6 +26,9 @@ body {
 
 .main{
     font-size: 100px;
+    width: 100vw!important;
+    min-height: 100vh!important;
+
     /*background-color: #ab6021;*/
     background-color: #150b28;
     /*background: rgb(7,15,52);*/

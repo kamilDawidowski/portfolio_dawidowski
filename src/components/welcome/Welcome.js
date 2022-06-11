@@ -1,9 +1,13 @@
 import React, {useEffect} from 'react';
 import './welcome.css'
 import {Box, Stack, Typography} from "@mui/material";
+import { motion } from "framer-motion";
 import WelcomeImage from "./WelcomeImage";
 
 function Welcome(props) {
+    useEffect(()=>{
+        console.log("Render")
+    },[])
 
     //Welcome JAVA-SCRIPT
     useEffect(() => {
@@ -29,14 +33,15 @@ function Welcome(props) {
 
     return (
         <Box className='welcome'>
-            <Stack spacing={2} >
-                <Typography id={'welcome'} className={'text-center'} ></Typography>
-                <Typography variant={"h4"} className={'text-center'}>Kamil Dawidowski </Typography>
-                <Typography variant={"body2"} className={'text-center '}>Fullstack Developer </Typography>
 
-            </Stack>
+                <Stack spacing={2}>
+                    <Typography id={'welcome'} className={'text-center'} ></Typography>
+                    <Typography variant={"h4"} className={'text-center'}>Kamil Dawidowski </Typography>
+                    <Typography variant={"body2"} className={'text-center '}>Fullstack Developer </Typography>
+                </Stack>
+
         </Box>
     );
 }
 
-export default Welcome;
+export default React.memo(Welcome)

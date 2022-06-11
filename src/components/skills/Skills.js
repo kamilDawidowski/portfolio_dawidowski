@@ -12,6 +12,8 @@ import java from "./../../assects/skill/java-white.png"
 import docker from "./../../assects/skill/docker-white.png"
 
 function Skills() {
+
+
     return (
         <Grid container spacing={4} sx={{marginTop: 4, marginBottom:10}}>
 

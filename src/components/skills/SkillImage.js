@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import secondLogo from "../../assects/about/portfolio_3.png";
 import './skill.css'
 function SkillImage(props) {
+
     return (
         <div className='text-center '>
             <img
